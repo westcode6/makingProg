@@ -6,7 +6,7 @@
 	import More from '$lib/components/icons/More.svelte';
 </script>
 
-<section class="w-full custom-glass py-2  rounded-xl">
+<section class="w-full custom-glass  rounded-xl">
 	<div class="w-full rounded-md relative flex flex-col items-center justify-center p-2">
 		<div class="w-20 sm:w-24 flex justify-center items-center relative">
 			<img
@@ -36,8 +36,8 @@
 		</div>
 <span />
 		<div class="flex flex-col items-center justify-center">
-			<p class="text-[10px] text-neutral-900 font-roboto font-bold mt-1">{album_name}</p>
-			<p class="text-[10px] text-neutral-400 tracking-wide font-nunito font-bold">{album_type}</p>
+			<p class="text-[11px] text-gray-900 font-roboto font-bold mt-1">{album_name}</p>
+			<p class="text-[10px] text-gray-500 tracking-wide font-nunito font-bold">{album_type}</p>
 		</div>
 	</div>
 </section>

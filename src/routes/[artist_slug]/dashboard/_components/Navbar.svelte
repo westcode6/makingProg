@@ -33,8 +33,8 @@
 	
 </div>
 
-<div class="mt-3 sm:mt-0 block sm:hidden">
-	<input type="text" class="w-full border shadow-sm rounded-xl text-neutral-500 px-4 py-3  placeholder:text-neutral-500" placeholder="Looking for....">
+<div class="mt-2 sm:mt-0 block sm:hidden">
+	<input type="text" class="w-full border shadow-inner rounded-xl text-neutral-500 font-medium px-4 py-2  placeholder:text-neutral-500" placeholder="Looking for....">
 </div> 
 </nav>
 

@@ -21,7 +21,7 @@
 		<span />
 		<div class="flex items-center justify-between mt-1">
 			<div class="flex flex-col items-start pl-4">
-				<h3 class="text-xs sm:text-sm font-nunito font-bold text-white">
+				<h3 class="text-xs sm:text-sm font-nunito font-bold text-gray-900">
 					{artist_slug}
 
 				</h3>

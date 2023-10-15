@@ -30,8 +30,8 @@
 
 <!-- top navbar -->
 
-<main class="w-full  px-2">
-
+<main class="w-full">
+<br />
 	<SectionWrapper Title={'Trending playlist'}>
 		<main class="w-full">
 			<div class="no-scrollbar w-full flex gap-4 items-start overflow-x-scroll">
