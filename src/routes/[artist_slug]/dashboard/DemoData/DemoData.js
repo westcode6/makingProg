@@ -3,7 +3,7 @@ export const DemoData = [
 	{
 		song_title: 'Father the World',
 		song_cover: '/src/lib/assets/albums/power.jpeg',
-		artist_name: '$WestDad'
+		artist_name: 'WestDad'
 	},
 
 	{

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { PageData } from './$types';
+	import type { PageData} from './$types';
 	import { DemoData, TrendingContents } from './DemoData/DemoData.js';
 	import { AlbumData } from './DemoData/AlbumData.js';
 	let artistData = DemoData;
@@ -9,31 +9,30 @@
 	export let data: PageData;
 
 	// Card Components
-	import SectionWrapper from './_components/Card Components/SectionWrapper.svelte';
-	import NewAlbum from './_components/Card Components/NewAlbum.svelte';
-	import TrendingPlaylist from './_components/Card Components/TrendingPlaylist.svelte';
+	import SectionWrapper from './_components/CardComponents/SectionWrapper.svelte';
+	import NewAlbum from './_components/CardComponents/NewAlbum.svelte';
+	import TrendingPlaylist from './_components/CardComponents/TrendingPlaylist.svelte';
 	import TrendingCard from './_components/TrendingCard.svelte';
 
-	import Navbar from '../dashboard/_components/Navbar.svelte';
 
-	// let artist_slug = data?.artist?.slug;
+	let artist_slug = data?.artist?.slug;
 
-	let getSinglesFromAPI = async () => {
-		const res = await fetch(`/${data.artist?.slug}/api/singles?size=5`);
-		return await res.json();
-	};
+	// let getSinglesFromAPI = async () => {
+	// 	const res = await fetch(`/${data.artist?.slug}/api/singles?size=5`);
+	// 	return await res.json();
+	// };
 
-	let getAlbumsFromAPI = async () => {
-		const res = await fetch(`/${data.artist?.slug}/api/albums?size=6`);
-		return await res.json();
-	};
+	// let getAlbumsFromAPI = async () => {
+	// 	const res = await fetch(`/${data.artist?.slug}/api/albums?size=6`);
+	// 	return await res.json();
+	// };
 </script>
 
 <!-- top navbar -->
-<Navbar />
 
-<main class="w-full rounded-2xl">
-	<SectionWrapper Title={'Trending playlist'} data>
+<main class="w-full  px-2">
+
+	<SectionWrapper Title={'Trending playlist'}>
 		<main class="w-full">
 			<div class="no-scrollbar w-full flex gap-4 items-start overflow-x-scroll">
 				{#each artistData as artist, index}
@@ -49,7 +48,7 @@
 		</main>
 	</SectionWrapper>
 
-	<SectionWrapper Title={'New albums'} data>
+	<SectionWrapper Title={'New albums'} >
 		
 			{#each albumData as album, index}
 				<NewAlbum
@@ -70,7 +69,7 @@
 		/>
 	</section>
 
-	<SectionWrapper Title={'Top artist'} data>
+	<SectionWrapper Title={'Top artist'}>
 		<!-- Main Content Container -->
 		<main class="w-full mt-2">
 			<div class="no-scrollbar w-full flex-col gap-2 items-start overflow-x-scroll">

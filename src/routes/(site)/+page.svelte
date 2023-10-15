@@ -19,7 +19,7 @@
 
 <style>
 	.banner {
-		background: url('../lib/assets/landing-bg.jpg');
+		background: url('../../lib/assets/landing-bg.jpg');
 		background-position: center;
 		background-size: cover;
 	}

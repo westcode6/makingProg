@@ -6,17 +6,17 @@
 	import More from '$lib/components/icons/More.svelte';
 </script>
 
-<section class="w-full flex items-center justify-center rounded-xl">
-	<div class="w-full rounded-md relative flex-col items-center justify-center">
-		<div class="w-24 flex justify-center items-center relative">
+<section class="w-full custom-glass py-2  rounded-xl">
+	<div class="w-full rounded-md relative flex flex-col items-center justify-center p-2">
+		<div class="w-20 sm:w-24 flex justify-center items-center relative">
 			<img
 				src={album_cover}
 				alt={album_name}
-				class="w-14 h-14 md:w-20 md:h-20 object-cover rounded-full shadow-2xl"
+				class="w-full h-20 sm:h-24 object-cover rounded-full shadow-2xl"
 			/>
 
-			<div class="w-full absolute   flex items-center justify-center">
-				<span class="w-4 h-4 glass-effect rounded-full flex items-center justify-center"
+			<div class="w-24 absolute   flex items-center justify-center">
+				<span class="p-2 glass-effect rounded-full"
 					><svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="white"
@@ -34,10 +34,10 @@
 				</span>
 			</div>
 		</div>
-
+<span />
 		<div class="flex flex-col items-center justify-center">
-			<p class="text-[10px] text-gray-700 custom-font-bold mt-1">{album_name}</p>
-			<p class="text-[10px] text-gray-400 tracking-wide custom-font-medium">{album_type}</p>
+			<p class="text-[10px] text-neutral-900 font-roboto font-bold mt-1">{album_name}</p>
+			<p class="text-[10px] text-neutral-400 tracking-wide font-nunito font-bold">{album_type}</p>
 		</div>
 	</div>
 </section>
